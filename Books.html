@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- تعريف نوع المستند وخصائص الصفحة -->
+    <meta charset="UTF-8" />
+    <!-- تحديد ترميز الأحرف لضمان عرض النصوص العربية بشكل صحيح -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- جعل الصفحة متجاوبة مع جميع الأجهزة -->
+    <title>الكتب - مكتبة دار المعارف</title>
+    <!--عنوان الصفحة -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ربط ملف CSS خارجي لتطبيق التنسيقات -->
+  </head>
+  <body>
+    <header>
+      <!-- القسم العلوي للموقع -->
+      <!-- عنوان رئيسي  -->
+      <h1>صفحة الكتب</h1>
+      <!-- قائمة تنقل رئيسية للتنقل بين الصفحات -->
+      <nav>
+        <ul>
+          <li><a href="index.html">المنزل</a></li>
+          <!-- رابط إلى صفحة المنزل -->
+          <li><a href="aboutus.html">من نحن</a></li>
+          <!-- رابط إلى صفحة "من نحن" -->
+          <li><a href="Books.html" class="active">الكتب</a></li>
+          <!-- رابط إلى الصفحة الحالية -->
+        </ul>
+      </nav>
+    </header>
+    <!-- القسم الرئيسي للمحتوى -->
+    <main>
+      <section>
+        <!-- قائمة الكتب -->
+        <h2>قائمة الكتب</h2>
+        <form id="book-form">
+          <table id="booksTable">
+            <thead>
+              <tr>
+                <th>رمز الكتاب</th>
+                <th>العنوان</th>
+                <th>السعر</th>
+                <th>التفاصيل</th>
+                <th>اختيار</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>124-3000</td>
+                <td>نظرية الفستق</td>
+                <td>30000 ل.س</td>
+                <td>
+                  <input type="checkbox" onclick="Details(this, 'details1')" />
+                </td>
+                <td><input type="radio" name="bookSelect" value="1" /></td>
+              </tr>
+              <tr id="details1" style="display: none">
+                <td colspan="5">
+                  الناشر: دار الحضارة للنشر والتوزيع
+                  <br />
+                  تصنيف الكتاب: التنمية البشرية وتطوير الذات
+                  <br />
+                  ملخص: يتمحور حول تطوير النفس وتنميتها في هذا الجزء، حيث قام
+                  بجمع مقالاته التي تتعلق في جانب التغيير والتطوير والتنمية
+                  الذاتية وأهمية التفكير المستقل، كما أنه قام بعمل أفكار مبتكرة
+                  لحل المشاكل التي تواجهنا في الحياة وذلك لشحن الطاقة الإيجابية
+                  لدى القارئ.
+                  <br />
+                  أجزائه :
+                  <br />
+                  <figure style="float: right">
+                    <img src="./images/1-1.jpg" width="200" height="300" />
+                    <figcaption>
+                      الجزء الأول: كيفية تطوير الذات<br />
+                      وتحسين طرق التفكير وزيادة الوعي لدى الأشخاص.
+                    </figcaption>
+                  </figure>
+                  <figure style="float: left">
+                    <img src="./images/1-2.jpg" width="200" height="300" />
+                    <figcaption>
+                      الجزء الثاني: يتضمن 52 موضوعًا في تطوير الذات<br />
+                      وأخطاء التفكير وعلاقتنا مع الناس.
+                    </figcaption>
+                  </figure>
+                </td>
+              </tr>
+              <tr>
+                <td>224-3000</td>
+                <td>الدولة الأموية في الشام</td>
+                <td>45000 ل.س</td>
+                <td>
+                  <input type="checkbox" onclick="Details(this, 'details2')" />
+                </td>
+                <td><input type="radio" name="bookSelect" value="2" /></td>
+              </tr>
+              <tr id="details2" style="display: none">
+                <td colspan="5">
+                  الناشر: مكتبة المشرق
+                  <br />
+                  تصنيف الكتاب: تاريخ
+                  <br />
+                  ملخص: معلومات ذات قِيمة تاريخية كبيرة حول تاريخ الدولة
+                  الأموية؛ ثاني خلافةٍ في تاريخ الإسلام, ففيه يتناول المؤلف —
+                  بإسهابٍ — تأسيس الدولة الأموية, وفتوحاتها, وحضارتها, وأحوال
+                  مجتمعها, وأخيرًا الأسباب التي أَوْدَتْ بمجدها.
+                  <br />
+                  المؤلف: أنيس زكريا
+                  <figure style="float: right">
+                    <img src="./images/2-1.jpg" width="200" height="300" />
+                  </figure>
+                  <figure style="float: left">
+                    <img src="./images/2-2.jpg" width="200" height="300" />
+                  </figure>
+                </td>
+              </tr>
+              <tr>
+                <td>324-3000</td>
+                <td>الف ليلة وليلة</td>
+                <td>25000 ل.س</td>
+                <td>
+                  <input type="checkbox" onclick="Details(this, 'details3')" />
+                </td>
+                <td><input type="radio" name="bookSelect" value="3" /></td>
+              </tr>
+              <tr id="details3" style="display: none">
+                <td colspan="5">
+                  الناشر: دار المعارف
+                  <br />
+                  تصنيف الكتاب: قصص شعبية
+                  <br />
+                  ملخص: كتاب أسطوري يضم مجموعة من القصص الشعبية من الشرق الأوسط
+                  وجنوب آسيا وشمال إفريقيا، تم جمعها خلال العصر الذهبي للإسلام.
+                  يتم سرد القصص ضمن إطار قصة مركزية تتضمن الشخصية الرئيسية،
+                  شهرزاد، التي تحكي حكايات للملك شهريار لتأجيل إعدامه.
+                  <br />
+                  أهم ثلاث قصص :
+                  <div class="book-images">
+                    <figure>
+                      <img src="./images/3-1.jpg" height="300" width="200" />
+                      <figcaption>علاء الدين والمصباح السحري</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="./images/3-2.jpg" height="300" width="200" />
+                      <figcaption>علي بابا والأربعون حرامي</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="./images/3-3.jpg" height="300" width="200" />
+                      <figcaption>رحلات السندباد السبع</figcaption>
+                    </figure>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>424-3000</td>
+                <td>غربة الياسمين</td>
+                <td>40000 ل.س</td>
+                <td>
+                  <input type="checkbox" onclick="Details(this, 'details4')" />
+                </td>
+                <td><input type="radio" name="bookSelect" value="4" /></td>
+              </tr>
+              <tr id="details4" style="display: none">
+                <td colspan="5">
+                  الناشر: كيان للنشر والتوزيع
+                  <br />
+                  تصنيف الكتاب: الروايات والقصص الأدبية
+                  <br />
+                  ملخص: جميع أنواع الياسمين تفضل النّموّ في مكان مشمس، لكنّها
+                  تتحمّل وجود شيء من الظلّ...
+                  <br />
+                  أجزائها :
+                  <div class="book-images">
+                    <figure>
+                      <img src="./images/4-1.jpg" height="300" width="200" />
+                      <figcaption>غربة الياسمين</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="./images/4-2.jpg" height="300" width="200" />
+                      <figcaption>ياسمين العودة</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="./images/4-3.jpg" height="300" width="200" />
+                      <figcaption>ياسمين أبيض</figcaption>
+                    </figure>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>524-3000</td>
+                <td>محاط بالحمقى</td>
+                <td>35000 ل.س</td>
+                <td>
+                  <input type="checkbox" onclick="Details(this, 'details5')" />
+                </td>
+                <td><input type="radio" name="bookSelect" value="5" /></td>
+              </tr>
+              <tr id="details5" style="display: none">
+                <td colspan="5">
+                  الناشر: الحافظ للنشر والتوزيع
+                  <br />
+                  تصنيف الكتاب: التنمية البشرية وتنمية وتطوير الذات
+                  <br />
+                  ملخص: كتاب محاط بالحمقى لمعرفة الأنماط الأربعة للسلوك البشري
+                  وكيفية التعامل معها.
+                  <br />
+                  <figure style="margin: auto">
+                    <img src="./images/5.jpg" height="300" width="200" />
+                  </figure>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" id="continueButton" onclick="clickbuttun()">
+            متابعة
+          </button>
+          <!-- زر لمتابعة وإظهار النموذج -->
+        </form>
+        <div id="show1" hidden>
+          <!-- قسم لإظهار النموذج عند النقر على زر متابعة -->
+          <form name="myform" onsubmit="return validateForm();" method="post">
+            <!-- نموذج لإدخال البيانات -->
+            <div class="form-field">
+              <input
+                type="text"
+                name="name"
+                placeholder="أدخل الاسم بالكامل"
+                class="large-field"
+              />
+              <!-- حقل لإدخال الاسم  -->
+              <label> الاسم</label>
+              <!-- تسمية حقل الاسم -->
+            </div>
+            <div class="form-field">
+              <input
+                type="text"
+                maxlength="11"
+                name="ID_number"
+                required
+                placeholder="أدخل الرقم الوطني"
+                class="large-field"
+              />
+              <!-- حقل لإدخال الرقم الوطني -->
+              <label>الرقم الوطني</label>
+              <!-- تسمية حقل الرقم الوطني -->
+            </div>
+            <div class="form-field" style="display: flex; align-items: center">
+              <input type="date" name="date" class="large-field" />
+              <!-- حقل لاختيار تاريخ الميلاد -->
+              <label style="margin-right: 10px">تاريخ الميلاد</label>
+              <!-- تسمية حقل تاريخ الميلاد -->
+            </div>
+            <div class="form-field">
+              <input
+                maxlength="10"
+                type="tel"
+                name="phone"
+                placeholder="رقم الهاتف"
+                class="large-field"
+              />
+              <!-- حقل لإدخال رقم الهاتف -->
+              <label>رقم الهاتف</label>
+              <!-- تسمية حقل رقم الهاتف -->
+            </div>
+            <div class="form-field">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email@gmail.com"
+                class="large-field"
+              />
+              <!-- حقل لإدخال البريد الإلكتروني -->
+              <label>البريد الالكتروني</label>
+              <!-- تسمية حقل البريد الإلكتروني -->
+            </div>
+            <div class="form-field">
+              <button type="submit" class="submit-button">إرسال</button>
+              <!-- زر لإرسال النموذج -->
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        حقوق النشر © 2024 - فريق مكتبة دار المعارف للكتب - جميع الحقوق محفوظة.
+      </p>
+      <!-- حقوق النشر -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- مكتبة JQuery -->
+    <script src="myfunction.js"></script>
+    <!-- ملف JavaScript-->
+  </body>
+</html>

@@ -1,0 +1,222 @@
+/* إعدادات العرض العامة */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.8;
+}
+/* رأس الصفحة */
+header {
+  background: #6200ea;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #3700b3;
+}
+/* تنسيق عنوان الرأس */
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+/* تنسيق اللون للنص */
+header h1 .white-text {
+  color: white;
+}
+/* تنسيق اللون للنص المميز*/
+header h1 span {
+  color: #ffc107;
+}
+/* قائمة التنقل */
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 10px 0 0;
+  padding: 0;
+}
+/* عناصر القائمة */
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+/* روابط القائمة */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border: 2px solid transparent;
+}
+/* تأثير التحويم على الروابط */
+nav ul li a:hover,
+nav ul li a.active {
+  background: #ffc107;
+  color: #333;
+  font-weight: bold;
+}
+/* تنسيق محتوى الصفحة */
+main {
+  padding: 20px;
+}
+main section {
+  background: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #ddd;
+}
+/* عناوين الأقسام */
+main h2 {
+  color: #6200ea;
+  margin-bottom: 10px;
+}
+/* تنسيق قائمة الطلاب */
+.students-list li {
+  margin-bottom: 8px;
+}
+/* تنسيق رابط المشروع */
+#project-link {
+  color: #6200ea;
+  text-decoration: underline;
+  font-weight: bold;
+}
+/* تأثير التحويم على رابط المشروع */
+#project-link:hover {
+  color: #3700b3;
+}
+/* تنسيق النص العريض في قسم الملاحظات */
+.notes-section strong {
+  color: #ff5722;
+  font-weight: bold;
+}
+/* تذييل الصفحة */
+footer {
+  text-align: center;
+  background: #3700b3;
+  color: white;
+  padding: 5px 0;
+  position: fixed;
+  bottom: -5px;
+  width: 100%;
+}
+/* تنسيق النص في التذييل */
+footer span {
+  color: #ffc107;
+}
+/* تنسيق وصف المكتبة */
+.library-description .sentence {
+  display: block;
+  margin-bottom: 10px;
+}
+/* صندوق المعلومات */
+.info-box {
+  background-color: #f7f7f7;
+  border: 2px solid #6200ea;
+  padding: 15px;
+  margin: 20px 0;
+  line-height: 1.8;
+  margin-bottom: 30px; /* إضافة مساحة إضافية في الأسفل */
+}
+/* فقرات داخل صندوق المعلومات */
+.info-box p {
+  margin: 10px 0;
+}
+/* تنسيق النص العريض داخل صندوق المعلومات */
+.info-box strong {
+  color: #3700b3;
+}
+/* صندوق معلومات الاتصال */
+.contact-info-box {
+  background-color: #f7f7f7;
+  border: 2px solid #6200ea;
+  padding: 10px;
+  margin: 20px 0;
+}
+/* إعدادات قائمة معلومات الاتصال */
+.contact-info-box ul {
+  list-style: none;
+  padding: 0;
+}
+/* عناصر قائمة معلومات الاتصال */
+.contact-info-box li {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+/* تنسيق النص في عناصر قائمة معلومات الاتصال */
+.contact-info-box li span {
+  margin-left: 8px;
+  color: #333;
+  padding-left: 10px;
+}
+/* تنسيق الجدول */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  text-align: right;
+}
+/* تنسيق عنوان الجدول وخلايا البيانات */
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+table th {
+  background-color: #6200ea;
+  color: #fff;
+}
+.details {
+  display: none;
+  background-color: #f9f9f9;
+}
+/* تنسيق صور الكتب */
+.book-images {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.book-images figure {
+  margin: 0 10px; 
+  text-align: center; 
+}
+/* تصميم زر المتابعة */
+#continueButton {
+  padding: 15px 25px; 
+  font-size: 1.3em; 
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold; 
+  text-transform: uppercase;
+}
+#continueButton:hover {
+  background-color: #3700b3;
+}
+.form-field {
+  display: flex;
+  align-items: center;
+}
+.form-field label {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.large-field {
+  width: 180px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #6200ea;
+  border-radius: 5px;
+  font-size: 14px; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* تخصيص تصاميم الحقول عند التركيز عليها */
+.form-field input:focus {
+  outline: none;
+  border-color: #3700b3; 
+  box-shadow: 0 0 5px rgba(3, 169, 244, 0.5);
+}

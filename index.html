@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- تعريف نوع المستند وخصائص الصفحة -->
+    <meta charset="UTF-8" />
+    <!-- تحديد ترميز الأحرف لضمان عرض النصوص العربية بشكل صحيح -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- جعل الصفحة متجاوبة مع جميع الأجهزة -->
+    <title>المنزل - مكتبة دار المعارف للكتب</title>
+    <!-- عنوان الصفحة -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ربط ملف CSS خارجي لتطبيق التنسيقات -->
+    <style>
+      /* تنسيق الروابط */
+      .project-link {
+        color: #6200ea;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .project-link:hover {
+        color: #3700b3;
+      }
+      /* تنسيق الأقسام */
+      .info-box {
+        background-color: #f9f9f9;
+        border: 2px solid #6200ea;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 8px;
+      }
+      h2 {
+        color: #6200ea; /* لون بنفسجي للعناوين */
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- القسم العلوي للموقع -->
+      <h1>المنزل</h1>
+      <!-- عنوان رئيسي -->
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">المنزل</a></li>
+          <!-- رابط إلى الصفحة الحالية -->
+          <li><a href="aboutus.html">من نحن</a></li>
+          <!-- رابط إلى صفحة "من نحن" -->
+          <li><a href="Books.html">الكتب</a></li>
+          <!-- رابط إلى صفحة "الكتب" -->
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="info-box">
+        <h2>أسماء الطلاب المشاركين</h2>
+        <ul class="students-list">
+          <li>أنس عكوش , anas_252150 , Anas Akoush</li>
+          <li>لجين مراد , loujain_256473 , loujain Mourad</li>
+          <li>علا القزاز , ola_339083 , Ola Alkazzaz</li>
+          <li>عمار رجب , ammar_239591 , Ammar Rajab</li>
+        </ul>
+      </section>
+      <section class="info-box">
+        <h2>رابط نشر المشروع</h2>
+        <p>
+          <a href="http://127.0.0.1:5500/index.html" class="project-link"
+            >http://127.0.0.1:5500/home.html</a>
+          
+        </p>
+      </section>
+      <section class="info-box">
+        <h2>ملاحظات</h2>
+        <p class="notes-section">
+          تم تصميم هذا الموقع كجزء من مشروع مادة
+          <strong> تصميم وتطوير تطبيقات الويب</strong> للدكتور مازن خضر -
+          <strong>الجامعة الافتراضية السورية</strong>.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <!-- حقوق النشر -->
+      <p>
+        حقوق النشر &copy; 2024 - فريق مكتبة دار المعارف للكتب - جميع الحقوق
+        محفوظة.
+      </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- مكتبة JQuery -->
+    <script src="myfunction.js"></script>
+    <!-- ملف JavaScript-->
+  </body>
+</html>
